@@ -11,6 +11,9 @@
 #include "openvino/core/model.hpp"
 #include "openvino/pass/pass.hpp"
 
+#undef OPENVINO_DEPRECATED
+#define OPENVINO_DEPRECATED(msg)
+
 namespace ov {
 namespace pass {
 
